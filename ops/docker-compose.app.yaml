@@ -30,8 +30,8 @@ services:
 
 
 networks:
-  default:
-    external:
-      name: ops_backend-db
   frontend-backend:
-    driver: bridge
+    name: frontend-backend
+  backend-db:
+    external:
+      true

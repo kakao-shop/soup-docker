@@ -55,4 +55,5 @@ volumes:
   MysqlData:
 
 networks:
-  backend-db: {}
+  backend-db:
+    name: backend-db
