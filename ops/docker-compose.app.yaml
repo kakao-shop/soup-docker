@@ -25,12 +25,13 @@ services:
       jwt.access-token.expire-length: 36000000
       jwt.refresh-token.expire-length: 12096000000
     networks:
-      - ops_backend-db
+      - default
       - frontend-backend
 
 
 networks:
+  default:
+    external:
+      name: ops_backend-db
   frontend-backend:
     driver: bridge
-  ops_backend-db:
-    external: true
