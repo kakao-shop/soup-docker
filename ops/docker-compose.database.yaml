@@ -38,19 +38,6 @@ services:
       - discovery.type=single-node
     restart: always
 
-  kibana:
-    container_name: soup-kibana
-    image: docker.elastic.co/kibana/kibana:7.9.1
-    ports:
-      - 5601:5601
-    networks:
-      - backend-db
-    depends_on:
-      - elasticsearch
-    links:
-      - elasticsearch
-    restart: always
-
 volumes:
   MysqlData:
 
