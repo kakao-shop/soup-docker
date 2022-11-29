@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   member-service:
-    image: 2214yj/soup-member-service:1.1
+    image: 2214yj/soup-member-service:2.0
     container_name: soup-member-service
     ports:
       - '8002:8002'
@@ -18,7 +18,7 @@ services:
       - frontend-backend
 
   admin-service:
-    image: 2214yj/soup-admin-service:1.1
+    image: 2214yj/soup-admin-service:2.0
     container_name: soup-admin-service
     ports:
       - '8001:8001'
@@ -33,7 +33,7 @@ services:
       - frontend-backend
 
   search-service:
-    image: 2214yj/soup-search-service:1.1
+    image: 2214yj/soup-search-service:2.0
     container_name: soup-search-service
     ports:
       - '8000:8000'
