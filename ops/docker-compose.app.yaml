@@ -49,7 +49,7 @@ services:
       - frontend-backend
 
   frontend:
-    image: aramu/soup-frontend:2.3
+    image: aramu/soup-frontend-msa:2.0
     container_name: soup-frontend
     ports:
       - '3000:3000'
