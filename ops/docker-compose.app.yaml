@@ -11,6 +11,7 @@ services:
       spring.datasource.username: root
       spring.datasource.password: pass123#
       spring.redis.host: soup-redis
+      spring.redis.port: 6379
       jwt.access-token.expire-length: 36000000
       jwt.refresh-token.expire-length: 12096000000
     networks:
