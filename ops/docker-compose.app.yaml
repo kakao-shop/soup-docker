@@ -42,6 +42,7 @@ services:
       spring.datasource.username: root
       spring.datasource.password: pass123#
       elasticsearch.host: soup-elasticsearch
+      elasticsearch.port: 9200
       jwt.access-token.expire-length: 36000000
       jwt.refresh-token.expire-length: 12096000000
     networks:
